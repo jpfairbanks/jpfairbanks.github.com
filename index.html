@@ -30,28 +30,50 @@
         <section id="main-content">
           <h1>Hello World</h1>
 
-<p>This is the user page for James Fairbanks. I am trying to migrate all of my writing to lightweight text. I already use org mode in Emacs for my meeting notes. Latex is a bit heavy for most of my text processing which can get away with a lighter markdown. I will see how this whole github pages thing goes.</p>
+<p>This is the user page for James Fairbanks. I am trying to migrate all of my writing to lightweight text. I already use org mode in Emacs for my meeting notes. Latex is a bit heavy for most of my text processing which can get away with a lighter markup, I like org-mode but the support is only really good for emacs users, since GitHub is popular and pushing Markdown, I think I will use it. Let the GitHub pages experiment begin! </p>
 
-<h1>Intensions</h1>
+<p>I am a big supported of the Literate Programming ideals, and I would like to integrate LP into my workflow. LP and Reproducible/Open Research are two movements that I think are trying to solve the same problems in Software Development and Academia respectively. In Computer Science we have the easiest environment to practice good science, but we squander it by keeping code private or proprietary. All it takes to reproduce someone's work is to get their code and run it. If people hide their code from scrutiny it will take months to validate the results of a paper, but with the code it will take hours. And if that code is well documented and the data collection was automated with scripts, then it will take minutes to validate the paper. We can compare this to Biology where they must acquire access to the expensive equipment and supplies, then reproduce manual experiments that take weeks to execute.</p>
 
-<p>The main purpose of my github repos will be to track and document the scripts that I use for data processing. In my HPC experiments I get a lot of timing data that needs to be visualized for papers and understanding the behavior of codes. The HPClab at GT specifically David Bader's group have been using json formatted output in order to get this timing data. I will be publishing the scripts that I write to parse this. </p>
+<p>So stay tuned to my repos for upcoming code for papers. Data will live on an ftp server at Georgia Tech, but links to it will go in the repos with the code. If you use any of my code please let me know and cite the corresponding publications. I am happy to provide feedback via GitHub issues or email. Of course pull requests are welcome if you [extend | fix | document] any code. </p>
 
 <h2>Reproducible Research</h2>
 
-<p>I intend to make all of the data and code available for any papers that I publish. They will each get a separate repository. This will enable others to take my research and verify it. I encourage all scientists to take a similar agenda, and help open science move faster.</p>
+<p>I intend to make all of the data and code available for any papers that I publish. They will each get a separate repository. This will enable others to take my research and verify the claims of the paper. I encourage all scientists to take a similar agenda, and help open science move faster. This will also help with have up to date code to compare with, so if someone claims better performance than a paper of mine claims, and I have updated the code without publishing, there will be a branch of code that has the improved code to compare with.</p>
 
 <h2>Data Munging</h2>
 
-<p>I am reading Wes McKinney's book on Python for Data Analysis and so most of my scripts will be using the Numpy, SciPy, Pandas, matplotlib toolchain for processing and visualizing the data. The book has really showed me some opportunities. I hope to do some serious work with STINGER and its Python API possibly taking a page out of Numpy's book and using Cython to accelerate my Python code for HPC worthiness. </p>
+<p>In HPC experiments we collect a large amount of timing data that needs to be visualized for papers and understanding the behavior of codes. The HPClab at GT, specifically David Bader's group, has been using json formatted output in order to get this timing data. I will be publishing the scripts that I write to process this into visualizations and statistics.</p>
+
+<p>Most of my scripts will be using the Numpy, SciPy, Pandas, matplotlib toolchain for processing and visualizing the data. I recommend Wes McKinney's book on Python for Data Analysis <a href="http://blog.wesmckinney.com/">Quant Pythonista Blog</a>. I hope to do some serious work with STINGER and its Python API. I will follow Numpy's lead and use Cython to accelerate Python code to achieve HPC worthiness. </p>
 
 <h1>Repo Index</h1>
 
-<ul>
-<li>scripts :: a place for some general scripts</li>
-<li>data_munging :: every project needs some specialized data processing code, hopefully this will aggregate into a library</li>
-<li>STINGER :: a git-svn branch of the STINGER codebase from Georgia Tech </li>
-<li>emacs :: my sweet emacs setup, mostly customizations to Prelude by batsov</li>
-</ul>
+<table>
+<tr>
+<th>Repo</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="http://github.com/jpfairbanks/scripts">scripts</a></td>
+<td>a place for some general scripts not associated with HPC or social media</td>
+</tr>
+<tr>
+<td>data_munging</td>
+<td>every project needs some specialized data processing code, hopefully this will aggregate into a library</td>
+</tr>
+<tr>
+<td>STINGER</td>
+<td>a git-svn branch of the <a href="http://trac.research.cc.gatech.edu/graphs/wiki/STINGER">STINGER</a> codebase from Georgia Tech</td>
+</tr>
+<tr>
+<td>emacs</td>
+<td>my sweet emacs setup, mostly customizations to <a href="http://batsov.com/prelude/">Prelude</a> by batsov</td>
+</tr>
+<tr>
+<td>cfb</td>
+<td>a statistics extractor for sports data particularly college football</td>
+</tr>
+</table>
         </section>
 
         <aside id="sidebar">
