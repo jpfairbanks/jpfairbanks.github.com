@@ -1,40 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <title>Jpfairbanks.github.com by jpfairbanks</title>
-  </head>
+  <title>Jpfairbanks.github.com</title>
+  <meta name="description" content="HPC and Graph Analysis">
 
-  <body>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
     <header>
-      <div class="inner">
-        <h1>Jpfairbanks.github.com</h1>
-        <h2>HPC and Graph Analysis</h2>
-        <a href="https://github.com/jpfairbanks" class="button"><small>Follow me on</small>GitHub</a>
-      </div>
+      <h1 class="title">Jpfairbanks.github.com</h1>
     </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+    <div id="container">
+      <p class="tagline">HPC and Graph Analysis</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/jpfairbanks" class="code">View Jpfairbanks.github.com on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
           <h1>Hello World</h1>
 
-<p>This is the user page for James Fairbanks. I am trying to migrate all of my writing to lightweight text. I already use org mode in Emacs for my meeting notes. Latex is a bit heavy for most of my text processing which can get away with a lighter markup, I like org-mode but the support is only really good for emacs users, since GitHub is popular and pushing Markdown, I think I will use it. Let the GitHub pages experiment begin! </p>
+<p>This is the user page for James Fairbanks. I am trying to migrate all of my writing to lightweight text. I already use org mode in Emacs for my meeting notes. Latex is a bit heavy for most of my text processing which can get away with a lighter markup, I like org-mode but the support is only really good for emacs users, since GitHub is popular and pushing Markdown, I think I will use it. Let the GitHub pages experiment begin! My main website is located at <a href="http://www.jpfairbanks.net">jpfairbanks.net</a>.</p>
 
 <p>I am a big supporter of the Literate Programming ideals, and I would like to integrate LP into my workflow. LP and Reproducible/Open Research are two movements that I think are trying to solve the same problems in Software Development and Academia respectively. In Computer Science we have the easiest environment to practice good science, but we squander it by keeping code private or proprietary. All it takes to reproduce someone's work is to get their code and run it. If people hide their code from scrutiny it will take months to validate the results of a paper, but with the code it will take hours. And if that code is well documented and the data collection was automated with scripts, then it will take minutes to validate the paper. We can compare this to Biology where they must acquire access to the expensive equipment and supplies, then reproduce manual experiments that take weeks to execute.</p>
 
-<p>So stay tuned to my repos for upcoming code for papers. Data will live on an ftp server at Georgia Tech, but links to it will go in the repos with the code. If you use any of my code please let me know and cite the corresponding publications. I am happy to provide feedback via GitHub issues or email. Of course pull requests are welcome if you [extend | fix | document] any code. </p>
+<p>So stay tuned to my repos for upcoming code for papers. Data will live on an ftp server, but links to it will go in the repos with the code. If you use any of my code please let me know and cite the corresponding publications. I am happy to provide feedback via GitHub issues or email. Of course pull requests are welcome if you [extend | fix | document] any code. </p>
 
 <h2>Reproducible Research</h2>
 
@@ -44,7 +50,7 @@
 
 <p>In HPC experiments we collect a large amount of timing data that needs to be visualized for papers and understanding the behavior of codes. The HPClab at GT, specifically David Bader's group, has been using json formatted output in order to get this timing data. I will be publishing the scripts that I write to process this into visualizations and statistics.</p>
 
-<p>Most of my scripts will be using the Numpy, SciPy, Pandas, matplotlib toolchain for processing and visualizing the data. I recommend Wes McKinney's book on Python for Data Analysis <a href="http://blog.wesmckinney.com/">Quant Pythonista Blog</a>. I hope to do some serious work with STINGER and its Python API. I will follow Numpy's lead and use Cython to accelerate Python code to achieve HPC worthiness. </p>
+<p>Most of my scripts will be using the Numpy, SciPy, Pandas, Matplotlib toolchain for processing and visualizing the data. I recommend Wes McKinney's book on Python for Data Analysis <a href="http://blog.wesmckinney.com/">Quant Pythonista Blog</a>. I hope to do some serious work with STINGER and its Python API. I will follow Numpy's lead and use Cython to accelerate Python code to achieve HPC worthiness. </p>
 
 <h1>Repo Index</h1>
 
@@ -70,6 +76,10 @@
 <td>a git-svn branch of the <a href="http://trac.research.cc.gatech.edu/graphs/wiki/STINGER">STINGER</a> codebase from Georgia Tech</td>
 </tr>
 <tr>
+<td><a href="http://github.com/jpfairbanks/bioinfo">bioinfo</a></td>
+<td>scripts from processing bioinformatics data</td>
+</tr>
+<tr>
 <td>emacs</td>
 <td>my sweet emacs setup, mostly customizations to <a href="http://batsov.com/prelude/">Prelude</a> by batsov</td>
 </tr>
@@ -78,16 +88,26 @@
 <td>a statistics extractor for sports data particularly college football</td>
 </tr>
 </table>
-        </section>
-
-        <aside id="sidebar">
-
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+        </article>
       </div>
     </div>
+    <footer>
+      <div class="owner">
+
+      <p><a href="https://github.com/jpfairbanks" class="avatar"><img src="https://secure.gravatar.com/avatar/b55d0921fd3853ad0be886b060e4cd35?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a>View <a href="https://github.com/jpfairbanks">jpfairbanks</a> on <a href="https://www.github.com">GitHub</a></p>
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/jpfairbanks/jpfairbanks.github.com/tarball/master" class="tar">tar</a><a href="https://github.com/jpfairbanks/jpfairbanks.github.com/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
 
   
-  </body>
+</body>
 </html>
